@@ -1,0 +1,11 @@
+@import "template_vars";
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "template_mixins";
+@import "template_webfonts";
+@import "components/jquery.datetimepicker";
+@import "components/sweetalert2";
+
+
+@import "template_styles";
