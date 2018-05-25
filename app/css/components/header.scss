@@ -1,5 +1,10 @@
 header {
-  .container{
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  padding: 10px 0 0;
+
+  .container {
     max-width: #{map-get($container-max-widths, xl)};
   }
   .top-row {
@@ -7,6 +12,30 @@ header {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+
+    &__toggle-nav {
+      > a {
+        background-image: url("../img/icons/toggle-menu.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+        width: 41px;
+        height: 35px;
+      }
+    }
+
+    &__logo {
+      > a {
+        background-image: url("../img/logo.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+        width: 331px;
+        height: 76px;
+      }
+    }
 
     &__location-switcher {
       &_toggle {
@@ -78,6 +107,19 @@ header {
   }
 
   &.light .top-row {
+
+    &__toggle-nav {
+      > a {
+        background-image: url("../img/icons/toggle-menu-white.svg");
+      }
+    }
+
+    &__logo {
+      > a {
+        background-image: url("../img/logo-white.png");
+      }
+    }
+
     &__location-switcher {
       &_toggle {
         color: $color_white;

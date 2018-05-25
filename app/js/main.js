@@ -11,6 +11,9 @@
 //= ../../node_modules/jquery-mask-plugin/dist/jquery.mask.js
 //= ../../node_modules/jquery-validation/dist/jquery.validate.js
 //= ../../node_modules/jquery-datetimepicker/build/jquery.datetimepicker.full.min.js
+//= ../../node_modules/swiper/dist/js/swiper.js
+
+//= components/top-slider.js
 
 $(document).ready(function () {
 
